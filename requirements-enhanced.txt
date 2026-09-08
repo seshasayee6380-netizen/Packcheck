@@ -1,0 +1,40 @@
+# Enhanced PackCheck AI Requirements
+# Version 2.1.0 - With OCR improvements
+
+# Core FastAPI Dependencies
+fastapi==0.115.14
+uvicorn[standard]==0.34.3
+python-multipart==0.0.20
+
+# PDF & Report Generation
+reportlab==4.3.1
+qrcode==7.4.2
+
+# Image Processing (CRITICAL FOR OCR)
+pillow==11.3.0
+opencv-python==4.13.0.92
+
+# OCR Engines (CORE OCR STACK)
+pytesseract==0.3.13          # Tesseract wrapper (REQUIRED)
+paddleocr==2.7.0.3            # PaddleOCR engine (RECOMMENDED)
+
+# Additional OCR Support
+numpy==1.24.3                 # Required by OpenCV and PaddleOCR
+
+# Optional Performance Enhancements
+Pillow-SIMD==9.2.0           # Faster image processing (optional)
+scipy==1.11.2                # Advanced image processing
+
+# System Dependencies (Install separately):
+# - tesseract-ocr: Ubuntu/Debian: `sudo apt-get install tesseract-ocr`
+# - Python 3.9+
+
+# Database
+# SQLite (built-in with Python)
+
+# Note: 
+# After installing requirements, also install system packages:
+# Ubuntu/Debian: sudo apt-get install tesseract-ocr libtesseract-dev
+# macOS: brew install tesseract
+# Windows: Download installer from https://github.com/UB-Mannheim/tesseract/wiki
+requests==2.32.4
